@@ -35,41 +35,7 @@
     <div class="wrapper">
         <!-- Header part  -->
         <div class="header" id="top">
-            <!-- Start Top Header -->
-            <div class="top-header">
-                <div class="top-header-left pull-left">
-                    <a href="products.html">Upto 50% Discount today</a>
-                </div>
-                <div class="top-header-right pull-right">
-                    <div class="container-fluid">
-                        <ul>
-                            <li class="top-header-list">
-                                <div class="dropdown">
-                                    <a href="account.html" class="link dropdown-toggle pointer" id="menu1" data-toggle="dropdown">
-                                        <span class="icon"><i class="fa fa-user"></i></span>
-                                        My Account
-                                        <span class="caret"></span>
-                                    </a>
-                                    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="cart.html">My Orders</a></li>
-                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="account.html">Wallets</a></li>
-                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="login.html">Logout</a></li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="top-header-list">
-                                <a href="account.html">
-                                    <span class="icon"><i class="fa fa-credit-card"></i></span>
-                                    Credit Card
-                                </a>
-                            </li>
-                            <li class="top-header-list"><a href="faq.html">
-                                <span class="icon"><i class="fa fa-question-circle"></i></span>
-                                Helps
-                            </a></li>
-                        </ul>
-                    </div>
-                </div>
+            
                 <div class="clear"></div>
             </div>
             <!-- End Top Header -->
@@ -85,12 +51,7 @@
                     </div>
 
                     <div class="header-search pull-left">
-                        <form action="#" method="post">
-                            <input type="search" name="Search" placeholder="Search for a Product..." required="">
-                            <button type="submit" class="btn btn-default" aria-label="Left Align">
-                                <i class="fa fa-search" aria-hidden="true"> </i>
-                            </button>
-                        </form>
+                        @yield('search')
                     </div>
 
                     <div class="header-cart">
@@ -245,12 +206,7 @@
 </li>
 
 
-<li class="wssearchbar clearfix">
-    <form class="topmenusearch">
-      <input placeholder="Search Product By Name, Category...">
-      <button class="btnstyle"><i class="searchicon fa fa-search" aria-hidden="true"></i></button>
-  </form>
-</li>
+
 
 <!-- <li class="wscarticon clearfix"> <a href="#"><i class="fa fa-shopping-basket"></i> <em class="roundpoint">8</em><span class="mobiletext">Shopping Cart</span></a> </li> -->
 
@@ -279,16 +235,7 @@
 <!-- Header part  -->
 
 
-<div class="content-area">
-    <div class="main-slider">
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-          <!-- Indicators -->
-          <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-            <li data-target="#myCarousel" data-slide-to="3"></li>
-        </ol>
+
 
         <!-- Wrapper for slides -->
         
@@ -314,22 +261,6 @@
 
                 <div class="clearfix"></div>
 
-                
-
-
-
-            </div> <!-- End Latest products row-->
-            <a href="products.html" class="btn btn-blue btn-lg pull-right btn-more wow slideInRight" data-wow-duration="1s" data-wow-delay="0s" data-wow-offset="10"> 
-                <span>See More products.. </span>
-            </a>
-            <div class="clear"></div>
-        </div> <!-- End products div-->
-    </div> <!-- End container latest products-->
-</div>  <!-- End Latest products -->
-
-
-</div> <!-- End Service -->
-
 </div> <!-- End content Area class -->
 
 
@@ -353,52 +284,13 @@
                 
 
             </div>
-            <div class="col-md-8">
-                <div class="subscribe wow slideInRight" data-wow-duration="1s" data-wow-delay="0s" data-wow-offset="10">
-                    <h3>Subscribe here to get some exciting offers</h3>
-                    <form action="#" method="post"> 
-                        <input type="text" name="email" placeholder="Enter your Email..." required="">
-                        <input type="submit" value="Subscribe">
-                    </form>
-                </div>
-                <div class="all-footer-links">
-                    <div class="col-md-4">
-                        <h3>Company</h3>
-                        <ul>
-                            <li><a href="about.html">About Us</a></li>
-                            <li><a href="contact">Contact Us</a></li> 
-                            <li><a href="privacy.html">Privacy Policy</a></li>
-                        </ul>
-                    </div>
+            
                     <div class="col-md-4 footer-grids">
                         <h3>Services</h3>
                         <ul>
                             <li><a href="contact">Contact Us</a></li>
-                            <li><a href="login.html">Returns</a></li> 
-                            <li><a href="faq.html" class="link">FAQ</a></li>
-                            <li><a href="#">Site Map</a></li>
-                            <li><a href="login.html">Order Status</a></li>
-                        </ul> 
-                    </div>
-                    <div class="col-md-4 footer-grids">
-                        <h3>Payment Methods</h3>
-                        <ul>
-                            <li><i class="fa fa-paypal" aria-hidden="true"></i> Paypal</li>
-                            <li><i class="fa fa-money" aria-hidden="true"></i> Bkash</li>
-                            <li><i class="fa fa-pie-chart" aria-hidden="true"></i>EMI Conversion</li>
-                            <li><i class="fa fa-gift" aria-hidden="true"></i> E-Gift Voucher</li>
-                            <li><i class="fa fa-credit-card" aria-hidden="true"></i> Debit/Credit Card</li>
-                        </ul>  
-                    </div>
-                </div>
-                <div class="clearfix"></div>
-                <div class="payment-links">
-                    <ul>
-                        <li><i class="fa fa-cc-paypal" style="color: #FFCC80"></i></li>
-                        <li><i class="fa fa-cc-mastercard" style="color: #FFEB3B"></i></li>
-                        <li><i class="fa fa-cc-stripe" style="color: yellow"></i></li>
-                        <li><i class="fa fa-credit-card" style="color: #FF9800"></i></li>
-                    </ul>
+                            
+                        
                 </div>
             </div>
         </div>

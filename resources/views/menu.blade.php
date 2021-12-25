@@ -2,8 +2,16 @@
 
 @section('content')
 
-@foreach($product as $p)
+@foreach($products as $p)
 
+@section('search')
+<form action="/menu"  method="get">
+                    <input name="keyword" type="text" class="form-control" placeholder="nama barang">
+                    <button type="submit" class="btn btn-default mb-3">search</button>
+                                
+                            </button>
+                        </form>
+@endsection
 <div class="products">
             <div class="row">
 

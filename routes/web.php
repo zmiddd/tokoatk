@@ -27,3 +27,5 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 
 Route::resource('/menu', MenuController::class);
+
+route::get('detail/{id}' , 'DetailController@index');

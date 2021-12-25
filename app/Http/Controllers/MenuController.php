@@ -12,11 +12,15 @@ class MenuController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        $product = Products::all();
+        $keyword = $request->get('keyword');
+        $products = Products::all();
 
-        return view('menu', compact('product'));
+        if($keyword){
+            $products = Products::where("nama","LIKE","%$keyword%")->get();
+        }
+        return view('menu',['products'=>$products]);
     }
 
     /**
